@@ -1,0 +1,2 @@
+由于Windows11混乱的任务栏更新，TrafficMonitor作者暂时无适配计划。
+本仓库计划在Windhawk中，魔改Taskbar Clock Customization，实现TrafficMonitor的功能
