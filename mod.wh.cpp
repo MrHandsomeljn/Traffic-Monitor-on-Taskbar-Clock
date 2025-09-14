@@ -100,14 +100,14 @@ styles, such as the font color and size.
 - ShowSeconds: true
   $name: Show seconds
 - TimeFormat: >-
-    hh':'mm':'ss tt
+    HH':'mm':'ss
   $name: Time format
   $description: >-
     Leave empty for the default format. For syntax refer to the following page:
 
     https://docs.microsoft.com/en-us/windows/win32/api/datetimeapi/nf-datetimeapi-gettimeformatex#remarks
 - DateFormat: >-
-    ddd',' MMM dd yyyy
+    yyyy/MM/dd
   $name: Date format
   $description: >-
     Leave empty for the default format. For syntax refer to the following page:
@@ -124,12 +124,12 @@ styles, such as the font color and size.
   $description: >-
     A comma-separated list of custom week days, Sunday through Saturday. Used if
     the custom format is specified for the week day format.
-- TopLine: '%upload_speed% | %time% | 功耗'
+- TopLine: '↑ %upload_speed% |  %time% '
   $name: Top line
   $description: >-
     Text to be shown on the first line. Set to "-" for the default value. Refer
     to the mod details for list of patterns that can be used.
-- BottomLine: '%download_speed% | %date% | %battery_rate%'
+- BottomLine: '↓ %download_speed% | %date%'
   $name: Bottom line
   $description: >-
     Only shown if the taskbar is large enough. Set to "-" for the default value.
@@ -259,7 +259,7 @@ styles, such as the font color and size.
     $description: >-
       Can be a color name (Red, Black, ...) or an RGB/ARGB color code (like
       #00FF00, #CC00FF00, ...).
-  - TextAlignment: "Left"
+  - TextAlignment: "Right"
     $name: Text alignment
     $options:
     - "": Default
@@ -269,7 +269,7 @@ styles, such as the font color and size.
   - FontSize: 0
     $name: Font size
     $description: Set to zero for the default size.
-  - FontFamily: ""
+  - FontFamily: "Maple Mono NF CN"
     $name: Font family
     $description: >-
       For a list of fonts that are shipped with Windows 11, refer to the
@@ -324,7 +324,7 @@ styles, such as the font color and size.
     $description: >-
       Can be a color name (Red, Black, ...) or an RGB/ARGB color code (like
       #00FF00, #CC00FF00, ...).
-  - TextAlignment: "Left"
+  - TextAlignment: "Right"
     $name: Text alignment
     $options:
     - "": Default
@@ -334,7 +334,7 @@ styles, such as the font color and size.
   - FontSize: 0
     $name: Font size
     $description: Set to zero for the default size.
-  - FontFamily: ""
+  - FontFamily: "Maple Mono NF CN"
     $name: Font family
     $description: >-
       For a list of fonts that are shipped with Windows 11, refer to the
@@ -4411,3 +4411,4 @@ BOOL Wh_ModSettingsChanged(BOOL* bReload) {
 
     return TRUE;
 }
+
